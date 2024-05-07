@@ -1,6 +1,6 @@
-dnf install ngnix -y
+dnf install nginx -y
 systemctl enable nginx
-systemctl start ngnix
+systemctl start nginx
 
 rm -rf /usr/share/nginx/html/*
 curl -o /tmp/frontend.zip https://expense-artifacts.s3.amazonaws.com/expense-frontend-v2.zip

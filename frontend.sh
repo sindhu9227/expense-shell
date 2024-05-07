@@ -1,4 +1,4 @@
-dnf install ngnix-y
+dnf install ngnix -y
 systemctl enable nginx
 systemctl start ngnix
 

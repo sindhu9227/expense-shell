@@ -1,4 +1,7 @@
 dnf install nginx -y
+
+cp expense.conf /etc/nginx/default.d/expense.conf
+
 systemctl enable nginx
 systemctl start nginx
 
@@ -9,6 +12,5 @@ cd /usr/share/nginx/html
 unzip /tmp/frontend.zip
 
 #Copy step
-cp expense.conf /etc/nginx/default.d/expense.conf
 
 systemctl restart nginx
